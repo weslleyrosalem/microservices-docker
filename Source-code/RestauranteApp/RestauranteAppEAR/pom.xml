@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>br.com.fiap</groupId>
+		<artifactId>RestauranteApp</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>RestauranteAppEAR</artifactId>
+	<packaging>ear</packaging>
+	<name>RestauranteAppEAR</name>
+	<description>Modulo EAR da aplicacao RestauranteApp</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>3.0.1</version>
+				<configuration>
+					<version>8</version>
+					<generateApplicationXml>false</generateApplicationXml>
+					<modules>
+						<webModule>
+							<groupId>br.com.fiap</groupId>
+							<artifactId>RestauranteAppAPI</artifactId>
+							<contextRoot>restauranteapp</contextRoot>
+							<bundleFileName>RestauranteAppAPI.war</bundleFileName>
+						</webModule>
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<dependencies>
+		<dependency>
+			<groupId>br.com.fiap</groupId>
+			<artifactId>RestauranteAppAPI</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>m2e</id>
+			<activation>
+				<property>
+					<name>m2e.version</name>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.maven.ide.eclipse</groupId>
+						<artifactId>lifecycle-mapping</artifactId>
+						<version>0.10.0</version>
+						<configuration>
+							<mappingId>customizable</mappingId>
+							<configurators>
+								<configurator id="org.maven.ide.eclipse.configuration.wtp.configurator" />
+							</configurators>
+							<mojoExecutions>
+								<mojoExecution>org.apache.maven.plugins:maven-resources-plugin::resources,testResources</mojoExecution>
+							</mojoExecutions>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

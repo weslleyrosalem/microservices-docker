@@ -1,0 +1,12 @@
+br/com/fiap/restauranteapp/bd/dao/RestauranteDAO.class
+br/com/fiap/restauranteapp/bd/dao/GenericDAO.class
+br/com/fiap/restauranteapp/utils/HibernateUtil.class
+br/com/fiap/restauranteapp/factory/DAOFactory.class
+br/com/fiap/restauranteapp/exception/InvalidInputException.class
+br/com/fiap/restauranteapp/api/RestaurantApi.class
+br/com/fiap/restauranteapp/api/InvalidInputExceptionMapper.class
+br/com/fiap/restauranteapp/vo/CategoriaVO.class
+br/com/fiap/restauranteapp/vo/RestauranteVO.class
+br/com/fiap/restauranteapp/vo/ErrorInfo.class
+br/com/fiap/restauranteapp/bd/connection/HibernateConnection.class
+br/com/fiap/restauranteapp/api/Servico.class

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+                
+    
+    
+    <wb-module deploy-name="RestauranteAppEAR-0.0.1-SNAPSHOT">
+                                
+        
+        
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+                                
+        
+        
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="RestauranteAppAPI.war" deploy-path="/" handle="module:/resource/RestauranteAppAPI/RestauranteAppAPI">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-core-2.5.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/logging/log4j/log4j-core/2.5/log4j-core-2.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-api-2.5.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/logging/log4j/log4j-api/2.5/log4j-api-2.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+                            
+    
+    
+    </wb-module>
+            
+
+
+</project-modules>
