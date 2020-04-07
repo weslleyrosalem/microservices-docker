@@ -11,6 +11,6 @@
  --workdir #dictory used to save and keep data from database;  
 
 ### Creating the environment  
-1- You need to have docker installed  
-2- Then run docker-compose up -d  
+ -  You need to have docker installed  
+ - Then run docker-compose up -d  
 
