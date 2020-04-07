@@ -1,7 +1,7 @@
 ### Authors ###
-# Weslley Rosalem
-# Ana Carolina Honorio
-# Rodrigo Santana
+ Weslley Rosalem
+ Ana Carolina Honorio
+ Rodrigo Santana
 
 ###  How to deploy the environment###
  - Structure
