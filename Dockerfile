@@ -1,5 +1,6 @@
 # WildFly 8 on Docker with Centos 7 and OpenJDK 1.7
-FROM jboss/wildfly:latest
+#FROM jboss/wildfly:latest
+FROM openshift/wildfly-81-centos7
 
 # Appserver
 ENV WILDFLY_USER admin
